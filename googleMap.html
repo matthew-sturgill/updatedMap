@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <!-- Our project CSS -->
+    <link rel="stylesheet" href="googleMap.css">
+    <!--Google -->
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+
+
+    <title>Google Map Assessment</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <!-- first column. class none. no info -->
+            <div class="col-md-4 none"> </div>
+            <!-- Middle column containing all info -->
+            <div class="col-md-4 center">
+                <input type="text" id="location" class="form-control col-md-4" placeholder="Location">
+                <button id="getMap" class="btn btn-warning">Get Google Map Location</button>
+                 <button id="delete" class="btn btn-danger" value="Refresh Page" onClick="window.location.reload()">Clear Page</button>
+              
+                <div class="map" id='gmap_canvas'></div>
+               <center> <a href="http://www.embedgooglemaps.com/en/">Embed google Map!</a></center>
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+
+    <!--3rd column. no info -->
+    <div class="col-md-4 none"> </div>
+
+    </div>
+    </div>
+
+
+
+
+
+
+    <!-- Official JQuery -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <!-- Our project JS -->
+    <script src="gooleMap.js"></script>
+    <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+
+
+
+</body>
+<footer>
+  
+  
+</footer>
+
+
+</html>
